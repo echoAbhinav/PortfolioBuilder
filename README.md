@@ -73,3 +73,7 @@ CREATE TABLE IF NOT EXISTS achievements (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
+Structure of code 
+```
+portfolioBuilder/ │ ├── ajax/ # AJAX endpoints │ ├── get_achievement.php │ └── get_skill.php │ ├── assets/ # Static assets │ ├── images/ # Avatars and project images │ │ ├── avtr1.avif │ │ ├── avtr2.avif │ │ ├── avtr3.webp │ │ ├── port.jpg │ │ ├── proj1.webp │ │ ├── proj2.jpeg │ │ └── proj3.jpeg │ └── js/ │ └── main.js # Custom JS logic │ ├── classes/ # Core logic classes │ ├── Achievement.php │ ├── CSRF.php │ ├── Goal.php │ └── skill.php │ ├── includes/ # Reusable includes │ ├── auth.php │ ├── config.php │ ├── db.php │ ├── footer.php │ ├── functions.php │ ├── header.php │ ├── sidebar.php │ └── topnav.php │ ├── achievements.php # User achievements page ├── add_goal.php # Form to add goals ├── dashboard.php # Main dashboard ├── delete_goal.php # Delete a goal ├── edit_goal.php # Edit a goal ├── goals.php # Goal listing ├── index.php # Entry point ├── landing.php # Landing page ├── login.php # Login page ├── logout.php # Logout handler ├── profile.php # User profile ├── register.php # Register page ├── report.txt # Development report or logs ├── skills.php # User skills page ├── update_dark_mode.php # Toggle dark mode └── README.md # This file
+```
